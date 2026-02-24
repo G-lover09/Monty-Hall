@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(goat2.png);
+    background-size: cover;
+    background-position: center;
+    top: -200px;
+
+  }
+  a{
+    color: black;
+  }
+  .main-con {
+    height: 300px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    
+  }
+
+  .inner-con {
+    text-align: center;
+    position: relative;
+    /* border: 2px solid green; */
+  }
+
+  .btn-con {
+    height: 30px;
+    width: 120px;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 85px;
+  }
+
+  #prg {
+    font-size: 30px;
+  }
+#one {
+    height: 20px;
+    width: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(180, 57, 238);
+    position: absolute;
+    right: 550px;
+    top: 250px;
+    filter: drop-shadowrgb(180, 57, 238);
+  }
+  
+  #three {
+    height: 20px;
+    width: 50px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: white;
+    background-color: rgb(180, 57, 238);
+    position: absolute;
+    left: 550px;
+    top: 250px;
+    filter: drop-shadowrgb(180, 57, 238);
+  }
+
+</style>
+<body>
+    <div class="main-con">
+      <div class="inner-con">
+
+        <div class="btn-con">
+          <div>
+        <button id="one" onclick="winA()">1</button>
+       <a href="win.html"><p id="win"></p></a>
+       <a href="lose.html"><p id="lose"></p></a>
+          </div>
+          <div>
+           <button id="three" onclick="winC()">3</button>
+            <a href="win.html"><p id="win"></p></a>
+            <a href="lose.html"><p id="lose"></p></a>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+<script src="mh.js"></script>
+</html>
